@@ -1,0 +1,15 @@
+function money(n){
+  return n.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})+' Gallion'+(Math.abs(n-1)>0.00001?'s':'');
+}
+function calculateLoan(){
+  const amount=Math.max(0,parseFloat(document.getElementById('amount').value)||0);
+  const rate=Math.max(0,parseFloat(document.getElementById('rate').value)||0);
+  const weeks=Math.max(1,parseInt(document.getElementById('weeks').value)||1);
+  const interest=amount*(rate/100);
+  const total=amount+interest;
+  document.getElementById('interest').textContent=money(interest);
+  document.getElementById('total').textContent=money(total);
+  document.getElementById('weekly').textContent=money(total/weeks);
+}
+['amount','rate','weeks'].forEach(id=>document.getElementById(id).addEventListener('input',calculateLoan));
+calculateLoan();
