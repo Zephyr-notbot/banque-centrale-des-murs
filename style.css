@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+:root{--black:#101010;--ink:#1c1c1c;--gold:#c9a227;--gold2:#e1c55b;--silver:#9b9b9b;--paper:#f7f5ef;--line:#ddd8ca}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:"Libre Baskerville",Georgia,serif;line-height:1.7}.topbar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:12px 5vw;background:rgba(255,255,255,.96);border-bottom:1px solid #ddd;backdrop-filter:blur(10px)}.brand{display:flex;align-items:center;gap:12px}.brand img{width:52px;height:52px;object-fit:contain}.brand strong{display:block;font-family:Cinzel,serif;text-transform:uppercase;letter-spacing:1px;font-size:15px}.brand span{display:block;font-size:10px;color:#777}nav{display:flex;gap:20px}nav a{color:#333;text-decoration:none;font-size:12px}nav a:hover{color:var(--gold)}
+.hero{min-height:640px;padding:90px 8vw;display:flex;align-items:center;justify-content:space-between;background:radial-gradient(circle at 80% 45%,#eee 0,transparent 28%),linear-gradient(135deg,#fff,#f3f2ed)}.hero-copy{max-width:760px}.eyebrow{font-family:Cinzel,serif;letter-spacing:3px;font-size:12px;color:#8b7220;font-weight:700}.hero h1{font-family:Cinzel,serif;font-size:clamp(42px,6vw,76px);line-height:1.08;margin:15px 0 25px;text-transform:uppercase}.hero h1 em{font-style:normal;color:#876d16}.lead{font-size:17px;max-width:680px;color:#555}.actions{display:flex;gap:14px;margin-top:30px}.btn{display:inline-block;padding:13px 20px;text-decoration:none;border:1px solid var(--gold);font-family:Cinzel,serif;font-size:12px;letter-spacing:1px;cursor:pointer}.primary{background:var(--black);color:#fff}.ghost{color:var(--black);background:#fff}.hero-seal{text-align:center;width:290px}.hero-seal img{width:260px;height:260px;object-fit:contain}.hero-seal span{font-family:Cinzel,serif;font-size:11px;letter-spacing:4px;color:#777}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #222;border-bottom:1px solid #222;margin:0 6vw;background:#fff}.stats div{padding:25px 20px;text-align:center;border-right:1px solid #ddd}.stats div:last-child{border-right:0}.stats b{display:block;font-family:Cinzel,serif;font-size:25px;color:#8b6f15}.stats span{font-size:11px;color:#777}
+.section{padding:95px 8vw}.section.dark{background:#111;color:#eee}.section.paper{background:var(--paper)}.section-head{max-width:780px;margin-bottom:45px}.section h2{font-family:Cinzel,serif;font-size:38px;line-height:1.2;margin:8px 0 15px}.section-head p{color:#777}.dark .section-head p{color:#aaa}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.cards article{border:1px solid var(--line);padding:28px;background:#fff}.cards article span{color:var(--gold);font-family:Cinzel}.cards h3,.property-grid h3,.loan h3{font-family:Cinzel,serif;margin:12px 0 8px}.cards p{font-size:13px;color:#666}.loan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.loan{border:1px solid #444;padding:27px;background:#171717}.loan.featured{border-color:var(--gold)}.loan b{font-family:Cinzel,serif;color:var(--gold2)}.loan p{font-size:13px}.loan small{color:#aaa}
+.calc-box{max-width:900px;padding:32px;border:1px solid #d7d2c4;background:#faf9f5;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.calc-box label{font-size:12px}.calc-box input{display:block;width:100%;padding:12px;border:1px solid #ccc;margin-top:7px;font:inherit}.calc-box button{align-self:end}.result{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #ccc;margin-top:10px}.result div{padding:20px;border-right:1px solid #ddd}.result div:last-child{border:0}.result span{display:block;font-size:11px;color:#777}.result b{font-family:Cinzel,serif;font-size:20px}.calc-box>small{grid-column:1/-1;color:#777}
+.table-wrap{overflow:auto;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;min-width:650px;background:#fff}th,td{text-align:left;padding:15px 18px;border-bottom:1px solid #e5e1d8;font-size:13px}th{font-family:Cinzel,serif;background:#f0ede5;color:#725b12}.note{font-size:11px;color:#777;margin-top:14px}
+.property-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.property-grid article{background:#fff;border:1px solid #ddd;padding:28px}.property-grid b{font-family:Cinzel,serif;font-size:24px;color:#8b6f15}.split{display:grid;grid-template-columns:1.4fr 1fr;gap:80px;align-items:center}.checklist{border-left:1px solid var(--gold);padding-left:30px}.checklist p{font-family:Cinzel,serif;color:#ddd}.three{grid-template-columns:repeat(3,1fr)}.currency{background:#f4f1e8}.conversion{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.conversion div{padding:30px;background:#fff;border:1px solid #d8d0bd}.conversion b{display:block;font-family:Cinzel,serif;font-size:27px}.conversion span{font-size:13px;color:#777}
+.contact{background:#fafafa}.contact-card{display:flex;gap:35px;align-items:center;max-width:800px;border:1px solid #ddd;background:#fff;padding:30px}.contact-card img{width:150px;height:150px;object-fit:contain}.contact-card h2{margin:5px 0 15px}.signature{max-width:800px;margin-top:50px}.signature span{font-family:Cinzel,serif;font-size:17px}.signature div{height:55px;border-bottom:1px solid #333;margin-top:5px}
+footer{background:#0d0d0d;color:#aaa;padding:35px 8vw;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:11px}footer strong{font-family:Cinzel;color:#ddd;letter-spacing:1px}
+@media(max-width:850px){.topbar{align-items:flex-start}.topbar nav{display:none}.hero{padding:60px 7vw;flex-direction:column;align-items:flex-start}.hero-seal{margin:30px auto 0}.stats{grid-template-columns:repeat(2,1fr);margin:0}.stats div{border-bottom:1px solid #ddd}.cards,.loan-grid,.property-grid,.conversion{grid-template-columns:1fr}.calc-box{grid-template-columns:1fr}.result{grid-template-columns:1fr}.result div{border-right:0;border-bottom:1px solid #ddd}.split{grid-template-columns:1fr;gap:30px}.section{padding:65px 7vw}.section h2{font-size:31px}}
+
+/* PLAN ÉPARGNE */
+.savings{background:linear-gradient(135deg,#f7f5ef,#fff)}
+.savings-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:18px}
+.savings-card{border:1px solid #d8d0bd;background:#fff;padding:30px;min-height:245px}
+.savings-featured{background:#111;color:#eee;border-color:var(--gold);position:relative}
+.savings-badge{font-family:Cinzel,serif;font-size:10px;letter-spacing:2px;color:var(--gold2)}
+.savings-card h3{font-family:Cinzel,serif;font-size:22px;margin:15px 0 10px}
+.savings-card p{font-size:13px;color:#666}
+.savings-featured p{color:#aaa}
+.savings-rate{font-family:Cinzel,serif;font-size:58px;line-height:1;color:var(--gold2);margin:18px 0 10px}
+.savings-limit{border-top:1px solid #444;margin-top:24px;padding-top:15px;display:flex;justify-content:space-between;gap:15px;align-items:center}
+.savings-limit span{font-size:11px;color:#aaa}
+.savings-limit strong{font-family:Cinzel,serif;color:#fff}
+.card-number{color:var(--gold);font-family:Cinzel,serif;font-size:13px}
+.savings-calculator{margin-top:35px;border-top:1px solid #d8d0bd;padding-top:35px;display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:center}
+.savings-calculator h3{font-family:Cinzel,serif;font-size:25px;margin:8px 0}
+.savings-calculator p:not(.eyebrow){font-size:13px;color:#777}
+.savings-calc-box{border:1px solid #d7d2c4;background:#faf9f5;padding:25px;display:grid;grid-template-columns:1fr auto;gap:15px}
+.savings-calc-box label{font-size:12px}
+.savings-calc-box input{display:block;width:100%;padding:12px;border:1px solid #ccc;margin-top:7px;font:inherit}
+.savings-calc-box button{align-self:end}
+.savings-result{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #ccc;margin-top:5px}
+.savings-result div{padding:18px 10px 5px}
+.savings-result span{display:block;font-size:11px;color:#777}
+.savings-result b{font-family:Cinzel,serif;font-size:20px;color:#8b6f15}
+.savings-calc-box>small{grid-column:1/-1;color:#777;font-size:10px}
+@media(max-width:850px){
+  .savings-grid{grid-template-columns:1fr}
+  .savings-calculator{grid-template-columns:1fr;gap:20px}
+  .savings-calc-box{grid-template-columns:1fr}
+  .savings-result{grid-template-columns:1fr}
+}
