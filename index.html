@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banque Centrale des Murs</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="logo.png" alt="Banque Centrale des Murs">
+    <div><strong>Banque Centrale des Murs</strong><span>Institution financière des Murs</span></div>
+  </div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#prets">Prêts</a>
+    <a href="#epargne">Épargne</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#immobilier">Immobilier</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">BANQUE CENTRALE DES MURS</p>
+    <h1>Faire de l'économie<br><em>un véritable moteur du RP.</em></h1>
+    <p class="lead">Une institution dédiée au financement des citoyens, des commerces, des exploitations agricoles et des projets qui font vivre les Murs.</p>
+    <div class="actions">
+      <a class="btn primary" href="#prets">Découvrir les prêts</a>
+      <a class="btn ghost" href="#epargne">Plan épargne +1 %</a>
+    </div>
+  </div>
+  <div class="hero-seal">
+    <img src="logo.png" alt="">
+    <span>MITRAS · TROST</span>
+  </div>
+</section>
+
+<section class="stats">
+  <div><b>200</b><span>Gallions de capital initial</span></div>
+  <div><b>1 %</b><span>Rendement du plan épargne</span></div>
+  <div><b>2</b><span>Membres fondateurs</span></div>
+  <div><b>25 → 50 → 100+</b><span>Objectif de souscripteurs</span></div>
+</section>
+
+<section id="services" class="section">
+  <div class="section-head"><p class="eyebrow">NOS SERVICES</p><h2>Une banque pensée pour créer du RP</h2></div>
+  <div class="cards">
+    <article><span>01</span><h3>Comptes</h3><p>Déposer, conserver et gérer son argent dans un cadre bancaire organisé.</p></article>
+    <article><span>02</span><h3>Prêts</h3><p>Financer un projet personnel, commercial, agricole ou immobilier.</p></article>
+    <article><span>03</span><h3>Épargne</h3><p>Déposer jusqu’à 22 500 Gallons et bénéficier d’un rendement de 1 % selon les conditions du plan.</p></article>
+    <article><span>04</span><h3>Immobilier</h3><p>Achat, location et financement de maisons et propriétés.</p></article>
+    <article><span>05</span><h3>Agriculture</h3><p>Achat, location et financement de terres agricoles et d'exploitations.</p></article>
+    <article><span>06</span><h3>Entreprises</h3><p>Accompagner les commerces dans leur création, leur équipement et leur expansion.</p></article>
+  </div>
+</section>
+
+<section id="prets" class="section dark">
+  <div class="section-head"><p class="eyebrow">FINANCEMENT</p><h2>Nos prêts</h2><p>Le taux moyen de référence est fixé autour de <strong>10 %</strong>. Le taux final dépend du montant, de la durée, du risque et des garanties.</p></div>
+  <div class="loan-grid">
+    <article class="loan"><h3>Micro</h3><b>1 – 5 Gallions</b><p>8 – 10 % · 1 à 4 semaines</p><small>Petits projets et équipement personnel.</small></article>
+    <article class="loan featured"><h3>Personnel</h3><b>5 – 20 Gallions</b><p>≈ 10 % · 2 à 8 semaines</p><small>Logement, équipement et projets personnels.</small></article>
+    <article class="loan"><h3>Professionnel</h3><b>20 – 50 Gallions</b><p>10 – 12 % · 4 à 12 semaines</p><small>Création ou développement d'une entreprise.</small></article>
+    <article class="loan"><h3>Agricole</h3><b>10 – 50 Gallions</b><p>8 – 11 % · 4 à 16 semaines</p><small>Terres, matériel et exploitation.</small></article>
+    <article class="loan"><h3>Immobilier</h3><b>20 – 100 Gallions</b><p>9 – 12 % · 8 à 24 semaines</p><small>Achat ou financement d'une propriété.</small></article>
+    <article class="loan"><h3>Grand financement</h3><b>50 – 150 Gallions</b><p>Sur étude · durée selon contrat</p><small>Projets importants et investissements majeurs.</small></article>
+  </div>
+</section>
+
+<section class="section calculator">
+  <div class="section-head"><p class="eyebrow">SIMULATION</p><h2>Calculateur de prêt</h2><p>Une estimation simple avant toute demande officielle.</p></div>
+  <div class="calc-box">
+    <label>Montant emprunté <input id="amount" type="number" min="0" step="0.01" value="10"></label>
+    <label>Taux annuel indicatif (%) <input id="rate" type="number" min="0" step="0.1" value="10"></label>
+    <label>Durée (semaines) <input id="weeks" type="number" min="1" step="1" value="8"></label>
+    <button class="btn primary" onclick="calculateLoan()">Calculer</button>
+    <div class="result">
+      <div><span>Intérêts estimés</span><b id="interest">1,00 Gallion</b></div>
+      <div><span>Total à rembourser</span><b id="total">11,00 Gallions</b></div>
+      <div><span>Par semaine</span><b id="weekly">1,38 Gallion</b></div>
+    </div>
+    <small>Simulation indicative. Le contrat signé avec la Banque Centrale des Murs fait foi.</small>
+  </div>
+</section>
+
+
+<section id="epargne" class="section savings">
+  <div class="section-head">
+    <p class="eyebrow">PLAN ÉPARGNE</p>
+    <h2>Faites travailler vos Gallons.</h2>
+    <p>Le Plan Épargne de la Banque Centrale des Murs permet de placer son argent et de bénéficier d’un rendement de <strong>1 %</strong>. Le montant placé est plafonné à <strong>22 500 Gallons</strong> par plan.</p>
+  </div>
+
+  <div class="savings-grid">
+    <article class="savings-card savings-featured">
+      <span class="savings-badge">OFFRE ÉPARGNE</span>
+      <h3>Plan Épargne B.C.M.</h3>
+      <div class="savings-rate">+1 %</div>
+      <p>Rendement appliqué au montant placé selon les conditions du contrat.</p>
+      <div class="savings-limit">
+        <span>Plafond de placement</span>
+        <strong>22 500 Gallons</strong>
+      </div>
+    </article>
+
+    <article class="savings-card">
+      <span class="card-number">01</span>
+      <h3>Un placement simple</h3>
+      <p>Déposez vos Gallons sur votre plan et laissez votre épargne produire son rendement.</p>
+    </article>
+
+    <article class="savings-card">
+      <span class="card-number">02</span>
+      <h3>Un plafond clair</h3>
+      <p>Le montant pouvant bénéficier du plan est limité à 22 500 Gallons, afin de maintenir un cadre bancaire équilibré.</p>
+    </article>
+  </div>
+
+  <div class="savings-calculator">
+    <div>
+      <p class="eyebrow">SIMULATION</p>
+      <h3>Calculez votre gain d’épargne</h3>
+      <p>Entrez le montant que vous souhaitez placer pour estimer le gain à 1 %.</p>
+    </div>
+
+    <div class="savings-calc-box">
+      <label>Montant placé
+        <input id="savingsAmount" type="number" min="0" max="22500" step="0.01" value="1000">
+      </label>
+      <button class="btn primary" type="button" onclick="calculateSavings()">Calculer</button>
+      <div class="savings-result">
+        <div><span>Gain estimé à 1 %</span><b id="savingsInterest">10,00 Gallions</b></div>
+        <div><span>Total après rendement</span><b id="savingsTotal">1 010,00 Gallions</b></div>
+      </div>
+      <small>Simulation RP indicative. Plafond du plan : 22 500 Gallons.</small>
+    </div>
+  </div>
+</section>
+
+<section id="tarifs" class="section">
+  <div class="section-head"><p class="eyebrow">TARIFICATION</p><h2>Tarifs indicatifs</h2></div>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Service</th><th>Tarif</th><th>Durée / condition</th></tr></thead>
+    <tbody>
+      <tr><td>Plan Épargne B.C.M.</td><td>+1 %</td><td>Plafond : 22 500 Gallons</td></tr>
+      <tr><td>Prêt personnel</td><td>≈ 10 %</td><td>2 à 8 semaines</td></tr>
+      <tr><td>Prêt professionnel</td><td>10 – 12 %</td><td>4 à 12 semaines</td></tr>
+      <tr><td>Prêt agricole</td><td>8 – 11 %</td><td>4 à 16 semaines</td></tr>
+      <tr><td>Prêt immobilier</td><td>9 – 12 %</td><td>8 à 24 semaines</td></tr>
+      <tr><td>Petite maison — location</td><td>0,5 Gallion</td><td>Par semaine</td></tr>
+      <tr><td>Maison standard — location</td><td>1 Gallion</td><td>Par semaine</td></tr>
+      <tr><td>Grande propriété — location</td><td>2 Gallions</td><td>Par semaine</td></tr>
+      <tr><td>Petite parcelle agricole</td><td>3 Gallions</td><td>À l'achat</td></tr>
+      <tr><td>Parcelle standard</td><td>7 Gallions</td><td>À l'achat</td></tr>
+      <tr><td>Grande exploitation</td><td>15 Gallions</td><td>À l'achat</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">Les tarifs sont indicatifs et peuvent évoluer selon le marché RP, les disponibilités, le risque et les décisions de la direction.</p>
+</section>
+
+<section id="immobilier" class="section paper">
+  <div class="section-head"><p class="eyebrow">PATRIMOINE</p><h2>Immobilier & terres agricoles</h2></div>
+  <div class="property-grid">
+    <article><h3>Petite maison</h3><b>8 Gallions</b><p>Location : 0,5 Gallion / semaine</p></article>
+    <article><h3>Maison standard</h3><b>15 Gallions</b><p>Location : 1 Gallion / semaine</p></article>
+    <article><h3>Grande maison</h3><b>30 Gallions</b><p>Location : 2 Gallions / semaine</p></article>
+    <article><h3>Petite parcelle</h3><b>3 Gallions</b><p>Terre agricole à l'achat.</p></article>
+    <article><h3>Parcelle standard</h3><b>7 Gallions</b><p>Terre agricole à l'achat.</p></article>
+    <article><h3>Grande exploitation</h3><b>15 Gallions</b><p>Projet agricole développé.</p></article>
+  </div>
+</section>
+
+<section class="section dark split">
+  <div><p class="eyebrow">NOTRE ENGAGEMENT</p><h2>Une économie encadrée.</h2><p>Chaque prêt est enregistré dans un contrat précisant le montant, le taux, la durée et les conditions de remboursement. Les gros financements peuvent nécessiter des garanties.</p></div>
+  <div class="checklist">
+    <p>✓ Contrats écrits</p><p>✓ Registre des prêts</p><p>✓ Suivi des remboursements</p><p>✓ Plafonds de financement</p><p>✓ Étude du risque</p><p>✓ Renégociation possible</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><p class="eyebrow">POURQUOI LA B.C.M. ?</p><h2>Trois objectifs, une institution.</h2></div>
+  <div class="cards three">
+    <article><h3>Créer du RP</h3><p>Financer des commerces, maisons, exploitations et projets qui génèrent de nouvelles interactions.</p></article>
+    <article><h3>Développer l'économie</h3><p>Donner une véritable utilité à la monnaie et créer des échanges entre les joueurs.</p></article>
+    <article><h3>Faire évoluer les Murs</h3><p>Accompagner progressivement les citoyens, les entreprises et les institutions.</p></article>
+  </div>
+</section>
+
+<section class="section currency">
+  <div class="section-head"><p class="eyebrow">SYSTÈME MONÉTAIRE</p><h2>Une monnaie clairement définie</h2></div>
+  <div class="conversion">
+    <div><b>1 Gallion</b><span>25 Vals</span></div>
+    <div><b>1 Gallion</b><span>1 000 Gallons</span></div>
+    <div><b>200 Gallions</b><span>5 000 Vals · 200 000 Gallons</span></div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="contact-card">
+    <img src="logo.png" alt="">
+    <div><p class="eyebrow">CONTACT</p><h2>Banque Centrale des Murs</h2><p>Siège : <strong>Mitras</strong><br>Comptoir : <strong>Trost</strong><br>PDG : <strong>@zephyr3580</strong><br>Associé : <strong>@dxpc</strong></p></div>
+  </div>
+  <div class="signature">
+    <span>Signature :</span>
+    <div></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <strong>BANQUE CENTRALE DES MURS</strong>
+  <span>« Faire de l'économie un véritable moteur du RP. »</span>
+  <span>Document institutionnel — Projet RP</span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
